@@ -30,7 +30,7 @@ Pre-compiled binaries for multiple platforms are available in the [`/releases`](
 
 **Available platforms**:
 - **macOS**: [`darwin-amd64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/darwin-amd64) | [`darwin-arm64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/darwin-arm64)
-- **Linux**: [`linux-amd64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-amd64) | [`linux-arm64`](./releases/v2.0.3/linux-arm64) | [`linux-armv7`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-armv7)
+- **Linux**: [`linux-amd64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-amd64) | [`linux-arm64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-arm64) | [`linux-armv7`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-armv7)
 - **Linux (musl)**: [`linux-musl-amd64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-musl-amd64) | [`linux-musl-arm64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-musl-arm64)
 
 **Verification**: SHA256 checksums available at [`checksums.sha256`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/checksums.sha256)
