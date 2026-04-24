@@ -24,16 +24,16 @@ stdio Bus kernel acts as a process supervisor and message router between externa
 
 ## Binary Releases
 
-Pre-compiled binaries for multiple platforms are available in the [`/releases`](./releases) directory. Each version contains ready-to-use `stdio_bus` binaries for different architectures:
+Pre-compiled binaries for multiple platforms are available in the [`/releases`](https://github.com/stdiobus/stdiobus/tree/main/releases) directory. Each version contains ready-to-use `stdio_bus` binaries for different architectures:
 
 ### Version 2.0.3
 
 **Available platforms**:
-- **macOS**: [`darwin-amd64`](./releases/v2.0.3/darwin-amd64) | [`darwin-arm64`](./releases/v2.0.3/darwin-arm64)
-- **Linux**: [`linux-amd64`](./releases/v2.0.3/linux-amd64) | [`linux-arm64`](./releases/v2.0.3/linux-arm64) | [`linux-armv7`](./releases/v2.0.3/linux-armv7)
-- **Linux (musl)**: [`linux-musl-amd64`](./releases/v2.0.3/linux-musl-amd64) | [`linux-musl-arm64`](./releases/v2.0.3/linux-musl-arm64)
+- **macOS**: [`darwin-amd64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/darwin-amd64) | [`darwin-arm64`]([./releases](https://github.com/stdiobus/stdiobus/tree/main/releases)/v2.0.3/darwin-arm64)
+- **Linux**: [`linux-amd64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-amd64) | [`linux-arm64`](./releases/v2.0.3/linux-arm64) | [`linux-armv7`]([./releases](https://github.com/stdiobus/stdiobus/tree/main/releases)/v2.0.3/linux-armv7)
+- **Linux (musl)**: [`linux-musl-amd64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-musl-amd64) | [`linux-musl-arm64`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/linux-musl-arm64)
 
-**Verification**: SHA256 checksums available at [`checksums.sha256`](./releases/v2.0.3/checksums.sha256)
+**Verification**: SHA256 checksums available at [`checksums.sha256`](https://github.com/stdiobus/stdiobus/tree/main/releases/v2.0.3/checksums.sha256)
 
 Download the appropriate binary for your platform and make it executable:
 ```bash
