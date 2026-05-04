@@ -1,10 +1,22 @@
-# stdio Bus – Agentic Orchestration Ecosystem
+<h1 align="center" style="font-weight:500">
+  <strong>stdio Bus – Agentic Orchestration Ecosystem</strong>
+</h1>
 
-[![stdioBus](https://img.shields.io/badge/ecosystem-stdio%20Bus-ff4500?style=for-the-badge)](https://github.com/stdiobus)
+<p align="center">
+  A deterministic C runtime providing transport-level routing for ACP/MCP-style agent protocols.
+</p>
 
-A deterministic C runtime providing transport-level routing for ACP/MCP-style agent protocols.
+<p align="center">
+  <a href="https://github.com/stdiobus"><img src="https://img.shields.io/badge/ecosystem-stdio%20Bus-ff4500?style=for-the-badge" alt="stdioBus" /></a>
+</p>
 
-[Website](https://stdiobus.com/) · [Workers](https://github.com/stdiobus/workers-registry) · [Docker Hub](https://hub.docker.com/r/stdiobus/stdiobus)
+
+<p align="center">
+  <a href="https://stdiobus.com/">Website</a> • 
+  <a href="https://hub.docker.com/r/stdiobus/stdiobus">Docker Hub</a> • 
+  <a href="https://github.com/stdiobus/mcp-agentic">MCP Agentic</a> • 
+  <a href="https://github.com/stdiobus/skills">MCP Agentic Skills</a>
+</p>
 
 stdio Bus kernel acts as a process supervisor and message router between external clients (IDEs, CLIs, services) and worker processes. It handles NDJSON-framed JSON-RPC messages with session-based routing, while remaining completely agnostic to protocol semantics.
 
