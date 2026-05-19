@@ -1,5 +1,5 @@
 <h1 align="center" style="font-weight:500">
-  <strong>stdio Bus – Agentic Orchestration Ecosystem</strong>
+  stdio Bus </br> Agentic Orchestration Ecosystem
 </h1>
 
 <p align="center">
