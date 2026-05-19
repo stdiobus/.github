@@ -85,15 +85,42 @@ Embedded stdio_bus runtime for your application process — no external daemon, 
 | Go | — | Planned   |
 
 
+## MCP Orchestration
+
+MCP server that connects IDE clients to ACP-compatible agents through stdio Bus: [`@stdiobus/mcp-agentic`](https://github.com/stdiobus/mcp-agentic)
+
+Exposes 8 MCP tools covering agent discovery, session lifecycle, one-shot delegation, and health checks. Supports in-process agents and external worker processes. Includes a Provider Factory API for OpenAI, Anthropic, and Google Gemini with a unified interface, runtime parameter control per session and per prompt, and a `defineProvider()` contract for custom or private LLM integrations.
+
+See [mcp-agentic](https://github.com/stdiobus/mcp-agentic) for provider setup, tool reference, and IDE integration.
+
+
+## MCP Module Launcher
+
+Manifest-driven CLI launcher for MCP server modules in the stdio Bus ecosystem: [`@stdiobus/mcpx`](https://github.com/stdiobus/mcpx)
+
+Replaces hardcoded shell commands in `mcp.json` with a single portable entrypoint — `mcpx run <module>`. Each module is described by a `module.json` manifest that defines runtime, entry point, environment defaults, and arguments. Supports Node.js, Python, Go, Rust, Shell, and Docker runtimes. Works with any MCP client: Kiro, Cursor, Claude Desktop, Windsurf.
+
+See [mcpx](https://github.com/stdiobus/mcpx) for manifest reference and environment management.
+
+
+## Agent Skills
+
+Structured, validated, machine-readable skills for AI agents delivered over MCP via stdio Bus: [`@stdiobus/skills`](https://github.com/stdiobus/skills)
+
+An MCP server that exposes agent skills as a machine-parseable knowledge base — not documentation for humans. Skills are organized in a 5-layer hierarchy (Concepts → API → Patterns → Guardrails → Diagnostics), CI-validated against real framework types, and served through five MCP tools: `list_skills`, `read_skill`, `list_references`, `read_reference`, `search_skills`. Ships with two skill collections: Runtime Web (12 skills for `@worktif/runtime`) and stdio Bus SDKs (C++, Node.js, Rust).
+
+See [skills](https://github.com/stdiobus/skills) for the skill catalog and agent consumption protocol.
+
 ## Workers
 
-Worker implementations for stdio Bus kernel: [`@stdiobus/workers-registry`](https://github.com/stdiobus/workers-registry)
+Protocol workers for stdio Bus kernel: [`@stdiobus/workers-registry`](https://github.com/stdiobus/workers-registry)
 
-Includes full ACP protocol agent, ACP Registry launcher for routing to any registered agent (Claude, Goose, Cline, GitHub Copilot and others), OpenAI-compatible endpoint bridge, MCP-to-ACP proxy for IDE integration, and echo/test workers for protocol validation.
+Includes ACP Registry launcher for routing to any registered agent (Claude, Goose, Cline, GitHub Copilot and others), OpenAI-compatible endpoint bridge, MCP-to-ACP proxy for IDE integration, standalone ACP agent for protocol testing, and echo workers for protocol validation. Workers run as child processes of the kernel, communicating via NDJSON over stdin/stdout. Authentication supports API keys and OAuth 2.1 with PKCE (GitHub, Google, Azure AD, AWS Cognito, OIDC).
 
-See [workers-registry](https://github.com/stdiobus/workers-registry) for configuration and usage.
+See [workers-registry](https://github.com/stdiobus/workers-registry) for the full worker catalog, configuration, and authentication setup.
 
 
 ## License
 
 Apache License, Version 2.0
+
