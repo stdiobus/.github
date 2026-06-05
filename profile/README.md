@@ -78,10 +78,10 @@ Embedded stdio_bus runtime for your application process — no external daemon, 
 
 | Language | Package | Status    |
 |----------|-------|-----------|
-| Rust | [`stdiobus`](https://crates.io/crates/stdiobus) | Available |
-| Node.js | [`@stdiobus/node`](https://www.npmjs.com/package/@stdiobus/node) | Available |
-| C++ | [`stdiobus`](https://github.com/stdiobus/stdiobus-cpp) | Available   |
-| Python | [`stdiobus`](https://pypi.org/project/stdiobus/) | Staging   |
+| Rust | [`stdiobus`](https://crates.io/crates/stdiobus) | 🟩 Available |
+| Node.js | [`@stdiobus/node`](https://www.npmjs.com/package/@stdiobus/node) | 🟩 Available |
+| C++ | [`stdiobus`](https://github.com/stdiobus/stdiobus-cpp) | 🟩 Available   |
+| Python | [`stdiobus`](https://pypi.org/project/stdiobus/) | 🟩 Available   |
 | Go | — | Planned   |
 
 
